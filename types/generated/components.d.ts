@@ -95,8 +95,8 @@ export interface ElementsLabelLink extends Struct.ComponentSchema {
     displayName: 'Label Link';
   };
   attributes: {
+    dropdownLinks: Schema.Attribute.Component<'elements.sub-link', true>;
     href: Schema.Attribute.String;
-    sublinks: Schema.Attribute.Component<'elements.label-link', true>;
     title: Schema.Attribute.String;
   };
 }
@@ -129,7 +129,6 @@ export interface ElementsSocialLink extends Struct.ComponentSchema {
 export interface ElementsSubLink extends Struct.ComponentSchema {
   collectionName: 'components_elements_sub_links';
   info: {
-    description: '';
     displayName: 'Sub Link';
   };
   attributes: {
