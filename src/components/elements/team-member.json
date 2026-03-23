@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_elements_team_members",
+  "info": {
+    "displayName": "Team Member"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "jobTitle": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false
+    },
+    "profileUrl": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

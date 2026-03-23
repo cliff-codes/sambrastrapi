@@ -1,0 +1,32 @@
+{
+  "kind": "singleType",
+  "collectionName": "global-footers",
+  "info": {
+    "singularName": "global-footer",
+    "pluralName": "global-footers",
+    "displayName": "Global Footer"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": false
+    }
+  },
+  "attributes": {
+    "copyrightText": {
+      "type": "string"
+    },
+    "contactInfo": {
+      "type": "component",
+      "component": "elements.contact-info",
+      "repeatable": false
+    },
+    "socialLinks": {
+      "type": "component",
+      "component": "elements.social-link",
+      "repeatable": true
+    }
+  }
+}

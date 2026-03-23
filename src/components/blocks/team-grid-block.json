@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_blocks_team_grid_blocks",
+  "info": {
+    "displayName": "Team Grid Block"
+  },
+  "options": {},
+  "attributes": {
+    "members": {
+      "type": "component",
+      "component": "elements.team-member",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

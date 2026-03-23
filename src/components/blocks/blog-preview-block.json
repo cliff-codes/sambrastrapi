@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_blocks_blog_preview_blocks",
+  "info": {
+    "displayName": "Blog Preview Block"
+  },
+  "options": {},
+  "attributes": {
+    "sectionTitle": {
+      "type": "string"
+    },
+    "previewLimit": {
+      "type": "integer"
+    }
+  },
+  "config": {}
+}

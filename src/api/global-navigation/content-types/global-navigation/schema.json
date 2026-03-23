@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "global-navigations",
+  "info": {
+    "singularName": "global-navigation",
+    "pluralName": "global-navigations",
+    "displayName": "Global Navigation"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": false
+    }
+  },
+  "attributes": {
+    "logoText": {
+      "type": "string"
+    },
+    "logoImage": {
+      "type": "media",
+      "multiple": false
+    },
+    "ctaText": {
+      "type": "string"
+    },
+    "ctaLink": {
+      "type": "string"
+    },
+    "navLinks": {
+      "type": "component",
+      "component": "elements.label-link",
+      "repeatable": true
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_blocks_faq_accordion_blocks",
+  "info": {
+    "displayName": "Faq Accordion Block"
+  },
+  "options": {},
+  "attributes": {
+    "questions": {
+      "type": "component",
+      "component": "elements.faq-item",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

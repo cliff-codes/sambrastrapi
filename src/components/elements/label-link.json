@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_elements_label_links",
+  "info": {
+    "displayName": "Label Link"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    },
+    "sublinks": {
+      "type": "component",
+      "component": "elements.sub-link",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

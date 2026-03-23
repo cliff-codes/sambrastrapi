@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_elements_sub_links",
+  "info": {
+    "displayName": "Sub Link",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    }
+  }
+}
