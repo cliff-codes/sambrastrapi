@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_blocks_know_us_blocks",
+  "info": {
+    "displayName": "Know Us Block"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "ServiceCards": {
+      "type": "component",
+      "component": "elements.service-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

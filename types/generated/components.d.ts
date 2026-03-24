@@ -18,7 +18,7 @@ export interface BlocksContentBlock extends Struct.ComponentSchema {
   };
   attributes: {
     content: Schema.Attribute.Blocks;
-    image: Schema.Attribute.Media;
+    image: Schema.Attribute.Media<'images'>;
     imagePosition: Schema.Attribute.Enumeration<['left', 'right']>;
     title: Schema.Attribute.String;
   };
@@ -40,9 +40,38 @@ export interface BlocksHeroBlock extends Struct.ComponentSchema {
     displayName: 'Hero Block';
   };
   attributes: {
-    backgroundImage: Schema.Attribute.Media;
+    backgroundImage: Schema.Attribute.Media<'images'>;
     heading: Schema.Attribute.String;
+    primaryCtaLink: Schema.Attribute.String;
+    primaryCtaText: Schema.Attribute.String;
+    secondaryCtaLink: Schema.Attribute.String;
+    secondaryCtaText: Schema.Attribute.String;
     subtext: Schema.Attribute.String;
+  };
+}
+
+export interface BlocksKnowUsBlock extends Struct.ComponentSchema {
+  collectionName: 'components_blocks_know_us_blocks';
+  info: {
+    displayName: 'Know Us Block';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    ServiceCards: Schema.Attribute.Component<'elements.service-card', true>;
+    Title: Schema.Attribute.String;
+  };
+}
+
+export interface BlocksNeedHelp extends Struct.ComponentSchema {
+  collectionName: 'components_blocks_need_helps';
+  info: {
+    displayName: 'Need Help Block';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    image: Schema.Attribute.Media<'images'>;
+    Link: Schema.Attribute.Component<'elements.sub-link', false>;
+    title: Schema.Attribute.String;
   };
 }
 
@@ -107,7 +136,7 @@ export interface ElementsServiceCard extends Struct.ComponentSchema {
     displayName: 'Service Card';
   };
   attributes: {
-    image: Schema.Attribute.Media;
+    image: Schema.Attribute.Media<'images'>;
     linkUrl: Schema.Attribute.String;
     title: Schema.Attribute.String;
   };
@@ -157,6 +186,8 @@ declare module '@strapi/strapi' {
       'blocks.content-block': BlocksContentBlock;
       'blocks.faq-accordion-block': BlocksFaqAccordionBlock;
       'blocks.hero-block': BlocksHeroBlock;
+      'blocks.know-us-block': BlocksKnowUsBlock;
+      'blocks.need-help': BlocksNeedHelp;
       'blocks.service-cards-block': BlocksServiceCardsBlock;
       'blocks.team-grid-block': BlocksTeamGridBlock;
       'elements.contact-info': ElementsContactInfo;

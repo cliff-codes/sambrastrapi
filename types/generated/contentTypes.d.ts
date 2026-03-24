@@ -653,6 +653,8 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
         'blocks.faq-accordion-block',
         'blocks.service-cards-block',
         'blocks.blog-preview-block',
+        'blocks.need-help',
+        'blocks.know-us-block',
       ]
     >;
     createdAt: Schema.Attribute.DateTime;
@@ -695,7 +697,7 @@ export interface ApiServiceService extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    heroImage: Schema.Attribute.Media;
+    heroImage: Schema.Attribute.Media<'images'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -730,13 +732,13 @@ export interface ApiSidebarMenuSidebarMenu extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    links: Schema.Attribute.Component<'elements.label-link', true>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::sidebar-menu.sidebar-menu'
     > &
       Schema.Attribute.Private;
+    menuLinks: Schema.Attribute.Component<'elements.label-link', true>;
     menuName: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     sidebarTitle: Schema.Attribute.String;

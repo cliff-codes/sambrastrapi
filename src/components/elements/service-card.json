@@ -10,7 +10,10 @@
     },
     "image": {
       "type": "media",
-      "multiple": false
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "linkUrl": {
       "type": "string"

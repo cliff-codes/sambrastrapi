@@ -1,22 +1,20 @@
 {
-  "collectionName": "components_blocks_content_blocks",
+  "collectionName": "components_blocks_need_helps",
   "info": {
-    "displayName": "Content Block"
+    "displayName": "Need Help Block"
   },
   "options": {},
   "attributes": {
     "title": {
       "type": "string"
     },
-    "content": {
-      "type": "blocks"
+    "description": {
+      "type": "text"
     },
-    "imagePosition": {
-      "type": "enumeration",
-      "enum": [
-        "left",
-        "right"
-      ]
+    "Link": {
+      "type": "component",
+      "component": "elements.sub-link",
+      "repeatable": false
     },
     "image": {
       "type": "media",

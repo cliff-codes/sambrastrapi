@@ -22,6 +22,7 @@
     "better-sqlite3": "12.6.2",
     "fs-extra": "^10.0.0",
     "mime-types": "^2.1.27",
+    "qs": "^6.15.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
@@ -29,6 +30,7 @@
   },
   "devDependencies": {
     "@types/node": "^20",
+    "@types/qs": "^6.15.0",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "typescript": "^5"
