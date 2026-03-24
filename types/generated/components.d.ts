@@ -172,7 +172,7 @@ export interface ElementsTeamMember extends Struct.ComponentSchema {
     displayName: 'Team Member';
   };
   attributes: {
-    image: Schema.Attribute.Media;
+    image: Schema.Attribute.Media<'images'>;
     jobTitle: Schema.Attribute.String;
     name: Schema.Attribute.String;
     profileUrl: Schema.Attribute.String;
