@@ -31,7 +31,8 @@
         "blocks.service-cards-block",
         "blocks.blog-preview-block",
         "blocks.need-help",
-        "blocks.know-us-block"
+        "blocks.know-us-block",
+        "blocks.blog-section-block"
       ]
     }
   }

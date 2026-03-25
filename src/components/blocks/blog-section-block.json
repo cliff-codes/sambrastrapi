@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_blocks_blog_section_blocks",
+  "info": {
+    "displayName": "blog-section-block"
+  },
+  "options": {},
+  "attributes": {
+    "sectionLabel": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "viewAllLink": {
+      "type": "string"
+    },
+    "blogCard": {
+      "type": "component",
+      "component": "elements.posts",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

@@ -696,6 +696,7 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
         'blocks.blog-preview-block',
         'blocks.need-help',
         'blocks.know-us-block',
+        'blocks.blog-section-block',
       ]
     >;
     createdAt: Schema.Attribute.DateTime;

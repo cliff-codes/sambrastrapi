@@ -11,6 +11,19 @@ export interface BlocksBlogPreviewBlock extends Struct.ComponentSchema {
   };
 }
 
+export interface BlocksBlogSectionBlock extends Struct.ComponentSchema {
+  collectionName: 'components_blocks_blog_section_blocks';
+  info: {
+    displayName: 'blog-section-block';
+  };
+  attributes: {
+    blogCard: Schema.Attribute.Component<'elements.posts', true>;
+    heading: Schema.Attribute.String;
+    sectionLabel: Schema.Attribute.String;
+    viewAllLink: Schema.Attribute.String;
+  };
+}
+
 export interface BlocksContentBlock extends Struct.ComponentSchema {
   collectionName: 'components_blocks_content_blocks';
   info: {
@@ -130,6 +143,18 @@ export interface ElementsLabelLink extends Struct.ComponentSchema {
   };
 }
 
+export interface ElementsPosts extends Struct.ComponentSchema {
+  collectionName: 'components_elements_posts';
+  info: {
+    displayName: 'posts';
+  };
+  attributes: {
+    image: Schema.Attribute.Media<'images'>;
+    slug: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface ElementsServiceCard extends Struct.ComponentSchema {
   collectionName: 'components_elements_service_cards';
   info: {
@@ -183,6 +208,7 @@ declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'blocks.blog-preview-block': BlocksBlogPreviewBlock;
+      'blocks.blog-section-block': BlocksBlogSectionBlock;
       'blocks.content-block': BlocksContentBlock;
       'blocks.faq-accordion-block': BlocksFaqAccordionBlock;
       'blocks.hero-block': BlocksHeroBlock;
@@ -193,6 +219,7 @@ declare module '@strapi/strapi' {
       'elements.contact-info': ElementsContactInfo;
       'elements.faq-item': ElementsFaqItem;
       'elements.label-link': ElementsLabelLink;
+      'elements.posts': ElementsPosts;
       'elements.service-card': ElementsServiceCard;
       'elements.social-link': ElementsSocialLink;
       'elements.sub-link': ElementsSubLink;
